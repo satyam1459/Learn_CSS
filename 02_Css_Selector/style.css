@@ -1,0 +1,25 @@
+h1{
+    color: red;
+    background-color: gray;
+}
+div#div{
+    background-color: aqua;
+}
+.blue{
+    background-color: blue;
+    color: white;
+}
+
+/* group selectors */
+.red, h3{
+    background-color: red;
+    color:white;
+}
+.aqua{
+    background-color: aqua;
+    color: white;
+}
+*{
+    margin:0;
+    padding: 0;
+}

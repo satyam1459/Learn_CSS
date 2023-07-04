@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .container{
+            background-color: red;
+            color:darkblue;
+            height:455px;
+        }
+        .box{
+            border:2px solid black;
+            display: inline-block;
+            /* transform: scale(0.5) translate(-100,100); */
+            /* transform: rotate(0.25turn); */
+            /* transform: scale(2); */
+            /* transform: translate(133px,155px) rotate(0.25 turn); */
+            /* transform: skew(4deg, 6deg); */
+            /* transform-origin: 0;
+            transform: translate(134px,56px);
+            transform: skew(20deg,10deg); */
+        }
+        img:hover{
+            width:516px;
+            height: 30px;
+        }
+        img{
+            width: 146px;
+            transition-property: width;
+            transition-duration: .3s;
+            transition-timing-function:ease-out ;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img id="myImage" src="https://images.unsplash.com/profile-1441298803695-accd94000cac?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=64&w=64&s=5a9dc749c43ce5bd60870b129a40902f" alt="Nature" width="960px" height="120px">
+            <button id="btn">Toggle</button>
+        </div>
+    </div>
+</body>
+<script>
+    myImage.style.width='146px'
+    btn.addEventListener("click",()=>{
+        if(myImage.style.width==='546px'){
+            myImage.style.width="146px";
+        }else if(myImage.style.width==='146px')
+        myImage.style.width="546px";
+    })
+</script>
+</html>

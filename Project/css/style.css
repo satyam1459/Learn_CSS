@@ -1,0 +1,107 @@
+:root{
+    --main-bg-color:#2874f0;;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: var(--main-bg-color);
+    font-family:Arial, Helvetica, sans-serif;
+}
+nav{
+    display: flex;
+}
+.logo{
+   display: flex;
+   align-items: center; 
+}
+.logo img{
+        width: 88px;
+        padding: 18px 25px;
+        height: 27px;
+}
+nav ul{
+    height: 60px;
+    display: flex;  
+    justify-content:flex-start; 
+    align-items: center; 
+}
+
+nav ul li{
+    list-style: none;
+    padding: 0 23px;
+}
+nav ul li a{
+    color:white;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    position: relative;
+    color:whitesmoke;
+    font-weight: bold;
+    background-attachment: fixed;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.search input{
+    width: 30vw;
+    height: 23px;
+    border-radius: 5px;
+    margin: 0px 46px 0 56px;   
+}
+
+.slider{
+    /* margin: auto; */
+    width: 80vw;
+    margin: 12px auto;
+    overflow: hidden;
+
+}
+.card h2{
+    font-family: monospace;
+
+}
+.my-1{
+    margin: 1px 0;
+}
+.my-2{
+    margin: 10px 0;
+}
+.text-center{
+    text-align: center;
+}
+.card{
+    max-width: 91vw;
+    margin: auto;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;    
+    overflow:hidden;
+}
+
+.card-item{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin :0 35px;
+}
+
+.container{
+    min-height: calc(100vh - 60px - 13vh);
+}
+
+footer{
+    height: 12vh;
+    background-color: black;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}

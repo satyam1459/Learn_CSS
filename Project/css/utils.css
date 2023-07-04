@@ -1,0 +1,19 @@
+.flex-all-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    padding: 2px 10px;
+    color: white;
+    background: var(--main-bg-color);
+    border-radius: 7px;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+}
+nav .btn:hover{
+    position: relative;
+    color:whitesmoke;
+    font-weight: bold;
+}

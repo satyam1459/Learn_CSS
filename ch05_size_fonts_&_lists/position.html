@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        /* *{
+            margin: 0;
+            padding: 0;
+        } */
+        li{
+            /* display: inline; */
+            /* list-style:disc; */
+            background-color: brown;
+            /* list-style: inside; */
+            /* list-style: square outside url('star.png'); */
+        }
+        header{
+            background-color: black;
+            color:white;
+            height: 70px;
+            position:sticky;
+            top:0;
+            z-index: 1;
+        }
+        p{
+            text-align: center;
+            border: 2px solid black;
+        }
+        .container{
+            background-color: aqua;
+            height: 400vh;
+            width: 50vw;
+            margin: auto;
+            z-index: 12;
+        }
+        .box{
+            height: 30px;
+            width: 120px;
+            background-color: yellow;
+            /* position: relative;
+            top: 0px;
+            left: 104px;     */
+            position: fixed;
+            right:0;
+            bottom:0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, voluptatibus fuga reprehenderit quo, obcaecati dolorem ipsa eveniet, a provident molestias dolor! Minima assumenda laboriosam tempora incidunt est numquam, qui, recusandae consequuntur, necessitatibus at corrupti!</p>
+        <div class="box">
+            Chat with us!
+        </div>
+    </div>
+    <ul>
+        <li>Banana</li>
+        <li>Apple</li>
+        <li>Oranges</li>
+    </ul>
+</body>
+</html>
